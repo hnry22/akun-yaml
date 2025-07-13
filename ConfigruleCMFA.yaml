@@ -1,4 +1,3 @@
-
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -33,19 +32,22 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-- name: AKUN1
-  server: investor.fb.com
-  port: 443
-  type: trojan
-  password: skskksk
-  skip-cert-verify: true
-  sni: tro-sgdo003.tunggure.buzz
-  network: ws
-  ws-opts:
-    path: /trojan-go
-    headers:
-      Host: tro-sgdo003.tunggure.buzz
-  udp: true
+  - name: AKUN1
+    server: quiz.int.vidio.com
+    port: 80
+    type: vmess
+    uuid: 396415b0-6f7d-4df3-9d50-1a3ff9115b1a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id2-ray.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: id2-ray.ipservers.xyz
+    udp: true
   - name: AKUN2
     server: quiz.int.vidio.com
     port: 443
