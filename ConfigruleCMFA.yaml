@@ -63,21 +63,19 @@ dns:
       headers:
         Host: id1vless.ipservers.xyz
     udp: true
-  - name: AKUN3
-    server: quiz.int.vidio.com
-    port: 443
-    type: vless
-    uuid: aae98731-898a-4cd3-8c7f-d09af2387d63
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: id2vless.ipservers.xyz
-    network: ws
-    ws-opts:
-      path: /jagoanssh
-      headers:
-        Host: id2vless.ipservers.xyz
-    udp: true
+ - name: AKUN3
+  server: tro-sgdo003.tunggure.buzz
+  port: 443
+  type: trojan
+  password: skskksk
+  skip-cert-verify: true
+  sni: tro-sgdo003.tunggure.buzz
+  network: ws
+  ws-opts:
+    path: /trojan-go
+    headers:
+      Host: tro-sgdo003.tunggure.buzz
+  udp: true
 
 proxy-groups:
   - name: ID-X
