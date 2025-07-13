@@ -31,7 +31,7 @@ dns:
     - 8.8.8.8
     - 1.1.1.1
     - 112.215.203.254
-    proxies:
+proxies:
   - name: AKUN1
     server: quiz.int.vidio.com
     port: 80
@@ -63,22 +63,21 @@ dns:
       headers:
         Host: id1vless.ipservers.xyz
     udp: true
-- name: AKUN3
-  server: untuk-hp.jekyjteng.my.id
-  port: 443
-  type: vmess
-  uuid: a8f5c82c-7398-44df-a057-7ea1e45861fd
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: untuk-hp.jekyjteng.my.id
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: untuk-hp.jekyjteng.my.id
-  udp: true
+  - name: AKUN3
+    server: quiz.int.vidio.com
+    port: 443
+    type: vless
+    uuid: aae98731-898a-4cd3-8c7f-d09af2387d63
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id2vless.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /jagoanssh
+      headers:
+        Host: id2vless.ipservers.xyz
+    udp: true
 
 proxy-groups:
   - name: ID-X
